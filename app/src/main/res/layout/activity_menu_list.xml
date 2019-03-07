@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/menu_list_back_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_icon"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/menu_list_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="메뉴 이름"
+            android:textColor="#323232"
+            android:fontFamily="@font/note_medium"
+            />
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_list_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        app:tabTextColor="@android:color/darker_gray"
+        app:tabSelectedTextColor="#000000"
+        app:tabIndicatorColor="#1ad2d2"
+        app:tabTextAppearance="@style/tab_text"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_list_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

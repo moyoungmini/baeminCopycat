@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/nav_header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/nav_user_icon" />
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nav_header_char"
+                android:layout_height="33dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nav_header_login_bt"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:background="#1ad2d2"
+            android:text="로그인"
+            android:fontFamily="@font/note_medium"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:fontFamily="@font/note_medium"
+                android:textColor="#323232"
+                android:layout_width="match_parent"
+                android:text="공지사항"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#323232"
+                android:fontFamily="@font/note_medium"
+                android:layout_width="match_parent"
+                android:text="이벤트"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#323232"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/note_medium"
+                android:text="광고문의"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#323232"
+                android:fontFamily="@font/note_medium"
+                android:layout_width="match_parent"
+                android:text="고객안심센터"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#323232"
+                android:fontFamily="@font/note_medium"
+                android:layout_width="match_parent"
+                android:text="1:1문의"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

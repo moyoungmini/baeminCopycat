@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/signup_phone_back_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/note_medium"
+            android:text="회원가입"
+            android:textColor="#323232"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/note_bold"
+            android:paddingLeft="10dp"
+            android:text="휴대 번호"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/signup_phone_phone_et"
+            android:layout_width="300dp"
+            android:inputType="phone"
+            android:paddingBottom="0dp"
+            android:layout_height="48dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/note_regular"
+            android:gravity="center_vertical"
+            android:hint="01012345678"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="#878787"
+            android:textSize="16sp"
+            android:theme="@style/EditTextTheme"></android.support.v7.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_phone_cert_receive_bt"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#d8d8d8"
+        android:fontFamily="@font/note_medium"
+        android:text="인증번호 받기"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/signup_phone_cer_num_et"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/note_regular"
+        android:textCursorDrawable="@drawable/cursor"
+        android:hint="인증 번호 입력"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColorHint="#000000"
+        android:theme="@style/EditTextTheme"></android.support.v7.widget.AppCompatEditText>
+
+    <Button
+        android:id="@+id/signup_phone_finish_bt"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#d8d8d8"
+        android:fontFamily="@font/note_medium"
+        android:text="완료"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

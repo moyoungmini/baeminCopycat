@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/note_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="tab_text_detail" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/note_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#c4c4c4</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">16dp</item>
+        <item name="android:maxWidth">11.8dp</item>
+        <item name="android:width">16dp</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#d8d8d8</item>
+        <item name="colorControlActivated">#1ad2d2</item>
+        <item name="colorControlHighlight">#1ad2d2</item>
+    </style>
+</resources>

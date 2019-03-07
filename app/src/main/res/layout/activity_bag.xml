@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/signup_back_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/note_medium"
+            android:text="장바구니"
+            android:gravity="center_horizontal"
+            android:textColor="#323232"
+            android:textSize="20sp" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/note_medium"
+        android:text="가게이름"
+        android:gravity="center_horizontal"
+        android:textColor="#323232"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="500dp"></ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/note_bold"
+        android:textColor="#ffffff"
+        android:background="#1ad2d2"
+        android:text="주문하기"/>
+</LinearLayout>

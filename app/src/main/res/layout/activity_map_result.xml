@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/map_result_back_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_icon"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="배달 받을 주소"
+            android:textColor="#323232"
+            android:fontFamily="@font/note_medium"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/marker_result"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/marker"
+            android:layout_gravity="center_horizontal |center_vertical"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="206dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/map_result_default_addr_tv"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/note_bold"
+            android:textSize="18sp"
+            android:textColor="#323232"
+            />
+        <EditText
+            android:id="@+id/map_result_detail_addr_et"
+            android:layout_marginBottom="31dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="48dp"
+            android:textColorHint="#323232"
+            android:includeFontPadding="false"
+            android:textSize="20dp"
+            android:fontFamily="@font/note_regular"
+            android:hint="상세주소를 입력하세요."
+            android:theme="@style/EditTextTheme"/>
+        <Button
+            android:id="@+id/map_result_finish_tv"
+            android:layout_width="match_parent"
+            android:background="#1ad2d2"
+            android:text="완료"
+            android:fontFamily="@font/note_medium"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="48dp" />
+    </LinearLayout>
+</LinearLayout>

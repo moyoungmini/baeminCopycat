@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:titleTextColor="#000000"
+                android:layout_width="46dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ffffff"
+                android:theme="@style/MyTheme"
+                app:popupTheme="@style/MyTheme"
+                >
+            </android.support.v7.widget.Toolbar>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingLeft="14dp"
+                    android:id="@+id/content_main_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#4b4b4b"/>
+                <ImageView
+                    android:paddingLeft="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/address_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager android:id="@+id/auto_view_pager"
+        android:layout_width="match_parent" android:layout_height="200dp">
+
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+    <GridLayout android:id="@+id/grid_list" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="horizontal" android:columnCount="3" android:rowCount="3">
+        <ImageView android:layout_width="100dp" android:layout_height="120dp"
+            android:id="@+id/main_grid_0"
+            android:layout_columnWeight="1" app:srcCompat="@drawable/korean" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_1"
+            android:layout_height="120dp" app:srcCompat="@drawable/snack_bar" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_2"
+            android:layout_height="120dp" app:srcCompat="@drawable/japan" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_3"
+            android:layout_height="120dp" app:srcCompat="@drawable/chicken" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_4"
+            android:layout_height="120dp" app:srcCompat="@drawable/pizza" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_5"
+            android:layout_height="120dp" app:srcCompat="@drawable/china" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_6"
+            android:layout_height="120dp" app:srcCompat="@drawable/fast_food" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_7"
+            android:layout_height="120dp" app:srcCompat="@drawable/meat" />
+        <ImageView android:layout_columnWeight="1" android:layout_width="100dp"
+            android:id="@+id/main_grid_8"
+            android:layout_height="120dp" app:srcCompat="@drawable/soup" />
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="49dp">
+
+        <ImageView
+            android:id="@+id/signup_back_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/note_medium"
+            android:text="회원가입"
+            android:textColor="#323232"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="19dp"
+            android:text="닉네임"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/note_bold"
+            android:includeFontPadding="false"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/signup_nickname_et"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="1~10자로 입력해주세요."
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/note_regular"
+            android:singleLine="true"
+            android:textColorHint="#878787"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:theme="@style/EditTextTheme"></android.support.v7.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/note_bold"
+            android:layout_marginLeft="10dp"
+            android:text="이메일"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/signup_id_et"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/note_regular"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="example@bamin.com"
+            android:theme="@style/EditTextTheme"
+            android:textColorHint="#878787"
+            android:includeFontPadding="false"
+            android:singleLine="true"></android.support.v7.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/note_bold"
+            android:text="비밀번호"
+            android:layout_marginLeft="10dp"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/signup_pw_et"
+            android:paddingLeft="10dp"
+            android:layout_width="300dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextTheme"
+            android:fontFamily="@font/note_regular"
+            android:includeFontPadding="false"
+            android:hint='1~15자로 입력해주세요.'
+            android:inputType="textPassword"
+            android:textColorHint="#878787"
+            android:singleLine="true"></android.support.v7.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_finish_bt"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+       android:layout_gravity="center_horizontal"
+        android:background="#1ad2d2"
+        android:fontFamily="@font/note_medium"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

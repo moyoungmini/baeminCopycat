@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+<ImageView
+    android:id="@+id/menu_list_item_img"
+    android:layout_width="64dp"
+    android:layout_marginLeft="20dp"
+    android:layout_gravity="center_vertical |center_horizontal"
+    android:src="@drawable/main_img"
+    android:layout_height="64dp" />
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+    <TextView
+        android:id="@+id/menu_list_item_store_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/note_bold"
+        android:text="가게 이름"
+        android:textSize="18sp"
+        android:textColor="#323232"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:id="@+id/menu_list_item_menu_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/note_regular"
+        android:textColor="#878787"
+        android:text="판매 메뉴"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+</LinearLayout>
+</LinearLayout>
+<!--
+//imageView.setBackground(new ShapeDrawable(new OvalShape()));
+    imageView.setClipToOutline(true);
+-->
